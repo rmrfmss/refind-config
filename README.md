@@ -7,5 +7,5 @@ in a case where you feel like using my configuration, do not forget to modify th
 - modified directory names.
 - removed the options for other icon sizes.
 - removed the other font options leaving only the `adobe source code pro, 14px`.
-- removed the old background and selection .png's, replaced them with darkened ones.
-- removed the theme.conf, merged it with my refind.conf.
+- removed the old background and selection `.png`'s, replaced them with darkened ones.
+- removed the `theme.conf`, merged it with my `refind.conf`.
