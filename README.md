@@ -1,44 +1,11 @@
-# rEFInd theme Regular
+# refind-config
+this refind configuration is the darkened and modified version of the source i've forked. this repo doesn't exist for others to use as it's highly modified to suit my needs but feel free to take whatever as you please.
 
-A simplistic clean and minimal theme for rEFInd
+in a case where you feel like using my configuration, do not forget to modify the boot menu entries and hidden directories for it to match your system as i directly use the `refind.conf` as my theme config file instead of adding a `theme.conf` as an entry to `refind.conf`.
 
-
-![Screenshot 01](http://i.imgur.com/wQQ5OiQ.png)
-**press F10 to take screenshot
-
-
-### Installation:
-
-1. Clone git repository to your $HOME directory.
-   ```
-   git clone https://github.com/munlik/refind-theme-regular.git
-   ```
-
-2. Locate refind directory under EFI partition. For most Linux based system is commonly `/boot/efi/EFI/refind/`. Copy theme directory to it.
-
-   **Important:** Delete older installed versions of this theme before you proceed any further.
-
-   ```
-   sudo rm -rf /boot/efi/EFI/refind/{regular-theme,refind-theme-regular}
-   ```
-   ```
-   sudo cp -r refind-theme-regular /boot/efi/EFI/refind/
-   ```
-3. Remove unused directory.
-   ```
-   sudo rm -rf /boot/efi/EFI/refind/refind-theme-regular/{src,.git}
-   ```
-
-4. To adjust icon size and font size edit `theme.conf`.
-   ```
-   sudo nano /boot/efi/EFI/refind/refind-theme-regular/theme.conf
-   ```
-
-5. To enable the theme add `include refind-theme-regular/theme.conf` at the end of `refind.conf`.
-   ```
-   sudo nano /boot/efi/EFI/refind/refind.conf
-   ```
-
-**More information**
-
-[rEFInd](http://www.rodsbooks.com/refind/) An official rEFInd website
+## modificiations i've done:
+- modified directory names.
+- removed the options for other icon sizes.
+- removed the other font options leaving only the `adobe source code pro, 14px`.
+- removed the old background and selection .png's, replaced them with darkened ones.
+- removed the theme.conf, merged it with my refind.conf.
